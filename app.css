@@ -1,0 +1,15 @@
+/* app css stylesheet */
+
+/* Put your css in here */
+
+body {
+  padding: 40px !important;
+}
+.avatar {
+margin:5px;
+padding: 5px;
+}
+ol#what_to_do li {
+  display:inline;
+  padding: 10px 20px;
+}

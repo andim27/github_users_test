@@ -1,0 +1,132 @@
+<!DOCTYPE>
+<html  ng-app="myApp">
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Andrey MK AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/fontawesome/4.3.0/css/font-awesome.css">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://mgcrea.github.io/angular-strap/styles/libs.min.css">
+  <link rel="stylesheet" href="http://mgcrea.github.io/angular-strap/styles/docs.min.css">
+  <link rel="stylesheet" href="app.css" />
+  <script src="http://cdn.jsdelivr.net/angularjs/1.4.5/angular.min.js" data-semver="1.4.5"></script>
+  <script src="http://cdn.jsdelivr.net/angularjs/1.4.5/angular-animate.min.js" data-semver="1.4.5"></script>
+  <script src="http://cdn.jsdelivr.net/angularjs/1.4.5/angular-sanitize.min.js" data-semver="1.4.5"></script>
+  <script src="http://mgcrea.github.io/angular-strap/dist/angular-strap.js" data-semver="v2.3.2"></script>
+  <script src="http://mgcrea.github.io/angular-strap/dist/angular-strap.tpl.js" data-semver="v2.3.2"></script>
+  <script src="http://mgcrea.github.io/angular-strap/docs/angular-strap.docs.tpl.js" data-semver="v2.3.2"></script>
+  <script src="app.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+<div class="text-center">
+<h2>Github users details</h2>
+<h3>Test application by Andrey Makarevich </h3>
+<h3>Ukraine,Kharkov</h3>
+<h3>skype:andrey_makarevich, email:a2772.am@gmail.com </h3>
+
+<ol id="what_to_do" class="text-center">
+  <li>Type name and press select button &rarr;</li>
+  <li>Click on user name &rarr;</li>
+  <li>Click on repos link &rarr;</li>
+  <li>Wait a few seconds &rarr;</li>
+  <li>click close button</li>
+</ol>
+
+</div>
+<div class="bs-docs-section" ng-controller="GitHubUsersCtrl">
+<div class="bs" append-source>
+  <div class="panel panel-default">
+    <div class="panel-heading">Github user search
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for..."  ng-model="users_name">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button" ng-click="selectUsers();">Select!</button>
+      </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="panel panel-default">
+    <div class="panel-heading">Users from GitHub</div>
+
+    <div class="panel-body">
+
+      <div class="panel-group" ng-model="panels.activePanel" role="tablist" aria-multiselectable="true" bs-collapse>
+        <div class="panel panel-default" ng-repeat="panel in panels">
+          <div class="panel-heading" role="tab">
+            <h4 class="panel-title">
+              <a bs-collapse-toggle ng-click="userTitleClick($index)">
+                {{ panel.title }}
+              </a>
+            </h4>
+          </div>
+          <div class="panel-collapse" role="tabpanel" bs-collapse-target>
+            <div class="panel-body" ng-bind-html="panel.body">
+
+            </div>
+            <!--  user details-->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Avatar</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Location</th>
+                  <th>Repo</th>
+                </tr>
+              </thead>
+              <tr>
+                <th scope="row">1</th>
+                <td><img class="avatar" src="{{panel.avatar_url}}" width="100px" height="100px"/></td>
+                <td>{{panel.user_name}}</td>
+                <td>{{panel.user_email}}</td>
+                <td>{{panel.user_location}}</td>
+                <td><a href="#" ng-click="userReposList($index);">Repo <span class="badge">{{panel.public_repos}}</span></a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div id="repo-list" ng-show="false" >
+  <table  class="table" >
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Repo name</th>
+      <th>Created</th>
+      <th>Commits</th>
+
+    </tr>
+    </thead>
+    <tr ng-repeat="repo in user_repos">
+      <th scope="row">{{$index+1}}</th>
+      <td>{{repo.name}}</td>
+      <td>{{repo.created_at}}</td>
+      <td><span>Commits</span></td>
+    </tr>
+  </table>
+</div>
+</div>
+</body>
+</html>

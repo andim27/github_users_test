@@ -1,0 +1,49 @@
+HTTP/1.1 200 OK
+Server: GitHub.com
+Date: Fri, 16 Oct 2015 11:07:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1104
+Status: 200 OK
+X-RateLimit-Limit: 10
+X-RateLimit-Remaining: 9
+X-RateLimit-Reset: 1444993684
+Cache-Control: no-cache
+X-GitHub-Media-Type: github.v3
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: deny
+Content-Security-Policy: default-src 'none'
+Access-Control-Allow-Credentials: true
+Access-Control-Expose-Headers: ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+Access-Control-Allow-Origin: *
+X-GitHub-Request-Id: 5D4D52C3:161C9:B9FBEE6:5620DA58
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding
+X-Served-By: 2811da37fbdda4367181b328b22b2499
+
+{
+  "total_count": 1,
+  "incomplete_results": false,
+  "items": [
+    {
+      "login": "andim27",
+      "id": 4599713,
+      "avatar_url": "https://avatars.githubusercontent.com/u/4599713?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/andim27",
+      "html_url": "https://github.com/andim27",
+      "followers_url": "https://api.github.com/users/andim27/followers",
+      "following_url": "https://api.github.com/users/andim27/following{/other_user}",
+      "gists_url": "https://api.github.com/users/andim27/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/andim27/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/andim27/subscriptions",
+      "organizations_url": "https://api.github.com/users/andim27/orgs",
+      "repos_url": "https://api.github.com/users/andim27/repos",
+      "events_url": "https://api.github.com/users/andim27/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/andim27/received_events",
+      "type": "User",
+      "site_admin": false,
+      "score": 31.101704
+    }
+  ]
+}

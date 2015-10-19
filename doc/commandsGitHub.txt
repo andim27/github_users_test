@@ -1,0 +1,5 @@
+
+curl -i https://api.github.com/search/users?q=andim
+curl -i https://api.github.com/search/repositories?q=user:andim27
+curl -i https://api.github.com/repos/andim27/shyna
+curl -i https://api.github.com/repos/andim27/shyna/commits

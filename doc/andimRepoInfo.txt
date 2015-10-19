@@ -1,0 +1,115 @@
+HTTP/1.1 200 OK
+Server: GitHub.com
+Date: Fri, 16 Oct 2015 11:49:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 4717
+Status: 200 OK
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 59
+X-RateLimit-Reset: 1444999780
+Cache-Control: public, max-age=60, s-maxage=60
+Last-Modified: Fri, 16 May 2014 22:37:07 GMT
+ETag: "caeb79ea85526eecfc19d5ebd7705201"
+Vary: Accept
+X-GitHub-Media-Type: github.v3
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: deny
+Content-Security-Policy: default-src 'none'
+Access-Control-Allow-Credentials: true
+Access-Control-Expose-Headers: ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+Access-Control-Allow-Origin: *
+X-GitHub-Request-Id: 5D4D52C3:AB2B:4F51B83:5620E453
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding
+X-Served-By: 8dd185e423974a7e13abbbe6e060031e
+
+{
+  "id": 13749126,
+  "name": "shyna",
+  "full_name": "andim27/shyna",
+  "owner": {
+    "login": "andim27",
+    "id": 4599713,
+    "avatar_url": "https://avatars.githubusercontent.com/u/4599713?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/andim27",
+    "html_url": "https://github.com/andim27",
+    "followers_url": "https://api.github.com/users/andim27/followers",
+    "following_url": "https://api.github.com/users/andim27/following{/other_user}",
+    "gists_url": "https://api.github.com/users/andim27/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/andim27/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/andim27/subscriptions",
+    "organizations_url": "https://api.github.com/users/andim27/orgs",
+    "repos_url": "https://api.github.com/users/andim27/repos",
+    "events_url": "https://api.github.com/users/andim27/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/andim27/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "private": false,
+  "html_url": "https://github.com/andim27/shyna",
+  "description": "shyna",
+  "fork": false,
+  "url": "https://api.github.com/repos/andim27/shyna",
+  "forks_url": "https://api.github.com/repos/andim27/shyna/forks",
+  "keys_url": "https://api.github.com/repos/andim27/shyna/keys{/key_id}",
+  "collaborators_url": "https://api.github.com/repos/andim27/shyna/collaborators{/collaborator}",
+  "teams_url": "https://api.github.com/repos/andim27/shyna/teams",
+  "hooks_url": "https://api.github.com/repos/andim27/shyna/hooks",
+  "issue_events_url": "https://api.github.com/repos/andim27/shyna/issues/events{/number}",
+  "events_url": "https://api.github.com/repos/andim27/shyna/events",
+  "assignees_url": "https://api.github.com/repos/andim27/shyna/assignees{/user}",
+  "branches_url": "https://api.github.com/repos/andim27/shyna/branches{/branch}",
+  "tags_url": "https://api.github.com/repos/andim27/shyna/tags",
+  "blobs_url": "https://api.github.com/repos/andim27/shyna/git/blobs{/sha}",
+  "git_tags_url": "https://api.github.com/repos/andim27/shyna/git/tags{/sha}",
+  "git_refs_url": "https://api.github.com/repos/andim27/shyna/git/refs{/sha}",
+  "trees_url": "https://api.github.com/repos/andim27/shyna/git/trees{/sha}",
+  "statuses_url": "https://api.github.com/repos/andim27/shyna/statuses/{sha}",
+  "languages_url": "https://api.github.com/repos/andim27/shyna/languages",
+  "stargazers_url": "https://api.github.com/repos/andim27/shyna/stargazers",
+  "contributors_url": "https://api.github.com/repos/andim27/shyna/contributors",
+  "subscribers_url": "https://api.github.com/repos/andim27/shyna/subscribers",
+  "subscription_url": "https://api.github.com/repos/andim27/shyna/subscription",
+  "commits_url": "https://api.github.com/repos/andim27/shyna/commits{/sha}",
+  "git_commits_url": "https://api.github.com/repos/andim27/shyna/git/commits{/sha}",
+  "comments_url": "https://api.github.com/repos/andim27/shyna/comments{/number}",
+  "issue_comment_url": "https://api.github.com/repos/andim27/shyna/issues/comments{/number}",
+  "contents_url": "https://api.github.com/repos/andim27/shyna/contents/{+path}",
+  "compare_url": "https://api.github.com/repos/andim27/shyna/compare/{base}...{head}",
+  "merges_url": "https://api.github.com/repos/andim27/shyna/merges",
+  "archive_url": "https://api.github.com/repos/andim27/shyna/{archive_format}{/ref}",
+  "downloads_url": "https://api.github.com/repos/andim27/shyna/downloads",
+  "issues_url": "https://api.github.com/repos/andim27/shyna/issues{/number}",
+  "pulls_url": "https://api.github.com/repos/andim27/shyna/pulls{/number}",
+  "milestones_url": "https://api.github.com/repos/andim27/shyna/milestones{/number}",
+  "notifications_url": "https://api.github.com/repos/andim27/shyna/notifications{?since,all,participating}",
+  "labels_url": "https://api.github.com/repos/andim27/shyna/labels{/name}",
+  "releases_url": "https://api.github.com/repos/andim27/shyna/releases{/id}",
+  "created_at": "2013-10-21T17:09:55Z",
+  "updated_at": "2014-05-16T22:37:07Z",
+  "pushed_at": "2013-10-21T17:11:12Z",
+  "git_url": "git://github.com/andim27/shyna.git",
+  "ssh_url": "git@github.com:andim27/shyna.git",
+  "clone_url": "https://github.com/andim27/shyna.git",
+  "svn_url": "https://github.com/andim27/shyna",
+  "homepage": null,
+  "size": 4796,
+  "stargazers_count": 0,
+  "watchers_count": 0,
+  "language": "PHP",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "forks_count": 0,
+  "mirror_url": null,
+  "open_issues_count": 0,
+  "forks": 0,
+  "open_issues": 0,
+  "watchers": 0,
+  "default_branch": "master",
+  "network_count": 0,
+  "subscribers_count": 1
+}
